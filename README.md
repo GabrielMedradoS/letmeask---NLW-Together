@@ -1,10 +1,14 @@
 ## letmeask-NLW-Together
 
 <div>
-  <img src="" alt="" width="100%"> 
+  <img src=".github/letmeask.png" alt="" width="100%"> 
 </div>
 
 ### 💻 Projeto
+
+Site de criaçao de salas
+
+Autenticaçao com firebase, banco de dados Realtime
 
 ### 🛠 Tecnologias
 
