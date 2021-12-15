@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import illustrationImg from "../assets/illustration.svg";
 import logoImg from "../assets/logo.svg";
 import { Button } from "../components/Button";
@@ -25,7 +27,7 @@ export function NewRoom() {
             <Button type="submit">Criar sala</Button>
           </form>
           <p>
-            Quer entrar em uma salça existente? <a href="#">clique aqui</a>
+            Quer entrar em uma salça existente? <Link to="/">clique aqui</Link>
           </p>
         </div>
       </main>
