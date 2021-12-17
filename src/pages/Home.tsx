@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from "../services/firebase";
+
 import illustrationImg from "../assets/illustration.svg";
 import logoImg from "../assets/logo.svg";
 import googleIconImg from "../assets/google-icon.svg";
@@ -12,7 +15,13 @@ export function Home() {
   const history = useNavigate();
 
   function handleCreateRoom() {
-    history("/rooms/new");
+    const provider = new GoogleAuthProvider();
+
+    signInWithPopup(auth, provider).then((result) => {
+      console.log(result);
+
+      history("/rooms/new");
+    });
   }
 
   return (
