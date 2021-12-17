@@ -6,12 +6,13 @@
 
 ### 💻 Projeto
 
-Site de criaçao de salas
+Site de criaçao de salas para perguntas e respostas
 
 Autenticaçao com firebase, banco de dados Realtime
 
 ### 🛠 Tecnologias
 
+https://firebase.google.com/docs/auth/web/google-signin#web-version-9_1
 https://v5.reactrouter.com/web/guides/quick-start
 
 <div>
