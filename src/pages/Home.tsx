@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { FormEvent, useState } from "react";
 
 import illustrationImg from "../assets/illustration.svg";
 import logoImg from "../assets/logo.svg";
@@ -13,6 +14,7 @@ import { useAuth } from "../hooks/useAuth";
 export function Home() {
   const history = useNavigate();
   const { user, signInWithGoogle } = useAuth();
+  const [roomCode, setRoomCode] = useState("");
 
   async function handleCreateRoom() {
     if (!user) {
@@ -20,6 +22,10 @@ export function Home() {
     }
 
     history("/rooms/new");
+  }
+
+  async function handleJoinRoom(event: FormEvent) {
+    event.preventDefault();
   }
 
   return (
@@ -41,8 +47,13 @@ export function Home() {
             Crie sua sala com o Google
           </button>
           <div className="separator">ou entre em um sala</div>
-          <form action="">
-            <input type="text" placeholder="Digite o codigo da sala" />
+          <form onSubmit={handleJoinRoom}>
+            <input
+              type="text"
+              placeholder="Digite o codigo da sala"
+              onChange={(event) => setRoomCode(event.target.value)}
+              value={roomCode}
+            />
             <Button type="submit">Entrar na sala</Button>
           </form>
         </div>
