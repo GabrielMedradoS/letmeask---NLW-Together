@@ -10,6 +10,8 @@ import "../styles/auth.scss";
 import { Button } from "../components/Button";
 
 import { useAuth } from "../hooks/useAuth";
+import { ref, get } from "firebase/database";
+import { database } from "../services/firebase";
 
 export function Home() {
   const history = useNavigate();
@@ -26,6 +28,20 @@ export function Home() {
 
   async function handleJoinRoom(event: FormEvent) {
     event.preventDefault();
+
+    if (roomCode.trim() === "") {
+      return;
+    }
+
+    /*  const roomRef = ref(database, `rooms/${roomCode}`); */
+    get(ref(database, `rooms/${roomCode}`)).then((snapshot) => {
+      if (snapshot.exists()) {
+        history(`/rooms/${roomCode}`);
+      } else {
+        alert("Room does not exist");
+        return;
+      }
+    });
   }
 
   return (
