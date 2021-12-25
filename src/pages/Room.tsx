@@ -18,7 +18,8 @@ export function Room() {
       <header>
         <div className="content">
           <img src={logoImg} alt="Letmeask" />
-          <RoomCode code={params.id} />
+          {/* exclamaçao para marcar que o valor SEMPRE vai ser uma string e nao undefined */}
+          <RoomCode code={params.id!} />
         </div>
       </header>
 
