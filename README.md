@@ -8,7 +8,7 @@
 
 Site de criaçao de salas para perguntas e respostas
 
-Autenticaçao com firebase, banco de dados Realtime
+Autenticaçao com firebase, banco de dados Realtime, hosting
 
 ### 🛠 Tecnologias
 
