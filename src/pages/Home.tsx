@@ -34,13 +34,17 @@ export function Home() {
     }
 
     /*  const roomRef = ref(database, `rooms/${roomCode}`); */
-    get(ref(database, `rooms/${roomCode}`)).then((snapshot) => {
-      if (snapshot.exists()) {
-        history(`/rooms/${roomCode}`);
-      } else {
+    get(ref(database, `rooms/${roomCode}`)).then((roomRef) => {
+      if (!roomRef.exists()) {
         alert("Room does not exist");
         return;
       }
+      if (roomRef.val().endedAt) {
+        alert("Room already closed");
+        return;
+      }
+
+      history(`/rooms/${roomCode}`);
     });
   }
 

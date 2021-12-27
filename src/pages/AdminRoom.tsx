@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import logoImg from "../assets/logo.svg";
 import { Button } from "../components/Button";
@@ -12,7 +12,7 @@ import { Question } from "../components/Question";
 import { useRoom } from "../hooks/useRoom";
 
 import { database } from "../services/firebase";
-import { ref, remove } from "firebase/database";
+import { ref, remove, update } from "firebase/database";
 
 type RoomParams = {
   id: string;
@@ -20,9 +20,18 @@ type RoomParams = {
 
 export function AdminRoom() {
   /* const { user } = useAuth(); */
+  const history = useNavigate();
   const params = useParams<RoomParams>();
   const roomId = params.id;
   const { title, questions } = useRoom(roomId!);
+
+  async function handleEndRoom() {
+    update(ref(database, `rooms/${roomId}`), {
+      endedAt: new Date(),
+    });
+
+    history("/");
+  }
 
   async function handleDeleteQuestion(questionId: string) {
     if (window.confirm("Voce tem certeza que deseja excluir esta pergunta?")) {
@@ -38,7 +47,9 @@ export function AdminRoom() {
           {/* exclamaçao para marcar que o valor SEMPRE vai ser uma string e nao undefined */}
           <div>
             <RoomCode code={roomId!} />
-            <Button isOutlined>Encerrar sala</Button>
+            <Button isOutlined onClick={handleEndRoom}>
+              Encerrar sala
+            </Button>
           </div>
         </div>
       </header>
