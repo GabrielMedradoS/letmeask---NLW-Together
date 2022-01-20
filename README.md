@@ -12,9 +12,9 @@ Autenticaçao com firebase, banco de dados Realtime, hosting
 
 ### 🛠 Tecnologias
 
-https://firebase.google.com/docs/auth/web/google-signin#web-version-9_1
-https://firebase.google.com/docs/database/web/read-and-write?hl=pt-br#web-version-9_4
-https://v5.reactrouter.com/web/guides/quick-start
+- https://firebase.google.com/docs/auth/web/google-signin#web-version-9_1
+- https://firebase.google.com/docs/database/web/read-and-write?hl=pt-br#web-version-9_4
+- https://v5.reactrouter.com/web/guides/quick-start
 
 <div>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"  height="30" width="40"/>
