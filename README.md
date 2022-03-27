@@ -1,17 +1,21 @@
 ## letmeask-NLW-Together
 ### Layout 🚧
 
+#### Desktop Screenshot
 <div>
   <img src=".github/letmeask.png" alt="" width="100%"> 
 </div>
 
-### 💻 Projeto
+### Projeto 💻
 
-Site de criaçao de salas para perguntas e respostas
+Projeto com o intuito de aumentar a interaçao entre o host e o chat com criaçao de perguntas e respostas
 
-Autenticaçao com firebase, banco de dados Realtime, hosting
+#### Nesse projeto foi utilizado: 
+- Autenticaçao com firebase - login com o Google, 
+- Banco de dados Realtime, 
+- Hosting
 
-## Running the project 🚴🏻‍♂️
+### Rodar o projeto 🚴🏻‍♂️
 
 #### On your machine:
 <details>
@@ -44,7 +48,7 @@ $ npm run dev
 # The project will start at the door: 3000 - access http://localhost:3000
 ```
 
-### 🛠 Tecnologias
+### Tecnologias 🛠
 
 - [Firebase | login Google](https://firebase.google.com/docs/auth/web/google-signin#web-version-9_1)
 - [Firebase | Read and write data](https://firebase.google.com/docs/database/web/read-and-write?hl=pt-br#web-version-9_4)
@@ -59,7 +63,7 @@ $ npm run dev
   alt="typescript" height="30" width="40"/>
 </div>
 
-### ✍🏾 Autor
+### Autor ✍🏾
 
 | <a  href="https://github.com/gabrielmedrados/"><img src="https://user-images.githubusercontent.com/73303001/126536001-655e3cbd-facd-4de1-992f-b8d9d3656ace.jpg" width="100" alt="perfil"/><br><sub>Gabriel Medrado</sub></a>|
 | :---: |
