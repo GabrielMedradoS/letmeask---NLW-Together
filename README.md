@@ -63,6 +63,9 @@ $ npm run dev
   alt="typescript" height="30" width="40"/>
 </div>
 
+## Licença ⚖️
+This project is under the MIT license. See the archive [LICENSE](https://github.com/GabrielMedradoS/letmeask---NLW-Together/blob/master/License) for more details.
+
 ## Autor ✍🏾
 
 | <a  href="https://github.com/gabrielmedrados/"><img src="https://user-images.githubusercontent.com/73303001/126536001-655e3cbd-facd-4de1-992f-b8d9d3656ace.jpg" width="100" alt="perfil"/><br><sub>Gabriel Medrado</sub></a>|
