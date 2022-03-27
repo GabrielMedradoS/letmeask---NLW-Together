@@ -18,8 +18,8 @@
 </div>
 
 ## Projeto 💻
-
-Projeto com o intuito de aumentar a interaçao entre o host e o chat com criaçao de perguntas e respostas
+- Aprendindo durante as aulas do evento NLW - Together
+- Projeto com o intuito de aumentar a interaçao entre o host e o chat com criaçao de perguntas e respostas
 
 #### Nesse projeto foi utilizado: 
 - Autenticaçao com firebase - login com o Google, 
