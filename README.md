@@ -1,7 +1,7 @@
 ## letmeask---NLW-Together
 
 <h1 align="center">
-    <img src="./src/assets/logo.svg" width="300" heigh="80" alt="logo happy">
+    <img src="./src/assets/logo.svg" width="300" heigh="80" alt="letmeask">
 </h1>
 <p align="center">
     <a href="#projeto-">Projeto</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
