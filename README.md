@@ -26,7 +26,7 @@
 
 #### Desktop Screenshot
 <div>
-  <img src=".github/letmeask.png" alt="" width="100%"> 
+  <img src=".github/github image.png" alt="" width="100%"> 
 </div>
 
 ## Projeto 💻
